@@ -15,7 +15,7 @@ checkForGame();
 const intervalId = setInterval(() => {
     if (playerFound) {
         clearInterval(intervalId); // Stop the interval
-        ModAPI.displayToChat({msg: "§5StatsHud is now loading"})
+        ModAPI.displayToChat({msg: "§5StatsHud is loading..."})
         initializeHud();
     } else {
         checkForGame();
@@ -186,7 +186,7 @@ function initializeHud() {
 
         // Adjust other styles as needed
         animatedParagraph.style.fontFamily = "'pressStart', sans-serif";
-        animatedParagraph.style.fontSize = "14px";
+        animatedParagraph.style.fontSize = "15px";
         animatedParagraph.style.alignSelf = "center";
 
         // Delayed fade-out effect after 2.5 seconds
